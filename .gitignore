@@ -1,0 +1,23 @@
+# Python caches
+__pycache__/
+*.pyc
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Logs and generated output
+log/
+output/
+
+
+# Virtual environments (if you use them within this directory)
+.venv/
+venv/
+env/
+
+# IDE specific files (e.g., VS Code, PyCharm)
+.vscode/
+.idea/
+
+# Sensitive config files (IMPORTANT: Read the note below for config.py)
+# config.py # <--- IMPORTANT: Read the note below!

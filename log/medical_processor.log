@@ -1,0 +1,862 @@
+2025-09-25 11:58:06,730 [ERROR] 主向量库路径不存在: /home/fangyi1/Deepseek项目/RAG项目/medical_retrieval/data/vector_database/all_pdfs_vector_db_qwen3/
+2025-09-25 11:58:44,769 [INFO] 使用设备: cuda
+2025-09-25 11:58:44,769 [INFO] 使用模型: deepseek-chat
+2025-09-25 11:58:44,769 [INFO] 开始初始化 MedicalProcessor 组件
+2025-09-25 11:58:44,769 [INFO] 初始化API客户端: DeepSeek API
+2025-09-25 11:58:44,770 [ERROR] 请提供API密钥
+2025-09-25 11:58:44,770 [ERROR] MedicalProcessor 初始化失败，程序退出
+2025-09-25 12:00:20,493 [INFO] 使用设备: cuda
+2025-09-25 12:00:20,493 [INFO] 使用模型: deepseek-chat
+2025-09-25 12:00:20,493 [INFO] 开始初始化 MedicalProcessor 组件
+2025-09-25 12:00:20,493 [INFO] 初始化API客户端: DeepSeek API
+2025-09-25 12:00:20,925 [INFO] API客户端初始化成功
+2025-09-25 12:00:20,925 [INFO] 重排序功能未启用
+2025-09-25 12:00:20,925 [INFO] 开始加载向量库...
+2025-09-25 12:00:20,925 [INFO] 初始化嵌入模型...
+2025-09-25 12:00:20,925 [INFO] 设备: cuda
+2025-09-25 12:00:20,925 [INFO] 模型路径: m3e-base
+2025-09-25 12:00:21,836 [INFO] Load pretrained SentenceTransformer: m3e-base
+2025-09-25 12:00:22,262 [WARNING] No sentence-transformers model found with name sentence-transformers/m3e-base. Creating a new one with mean pooling.
+2025-09-25 12:00:22,498 [ERROR] 嵌入模型加载失败: sentence-transformers/m3e-base is not a local folder and is not a valid model identifier listed on 'https://huggingface.co/models'
+If this is a private repository, make sure to pass a token having permission to this repo either by logging in with `hf auth login` or by passing `token=<your_token>`
+2025-09-25 12:00:22,498 [ERROR] 向量库加载失败
+2025-09-25 12:00:22,498 [ERROR] MedicalProcessor 初始化失败，程序退出
+2025-09-25 12:02:36,290 [ERROR] 症状向量库路径不存在: /home/fangyi1/Deepseek项目/RAG项目/medical_retrieval/data/vector_database/0.6B/Definition_vector_store/
+2025-09-25 12:03:39,769 [INFO] 使用设备: cuda
+2025-09-25 12:03:39,769 [INFO] 使用模型: deepseek-chat
+2025-09-25 12:03:39,769 [INFO] 开始初始化 MedicalProcessor 组件
+2025-09-25 12:03:39,769 [INFO] 初始化API客户端: DeepSeek API
+2025-09-25 12:03:40,084 [INFO] API客户端初始化成功
+2025-09-25 12:03:40,084 [INFO] 重排序功能未启用
+2025-09-25 12:03:40,084 [INFO] 开始加载向量库...
+2025-09-25 12:03:40,084 [INFO] 初始化嵌入模型...
+2025-09-25 12:03:40,084 [INFO] 设备: cuda
+2025-09-25 12:03:40,084 [INFO] 模型路径: /mnt/fang/qwen3_embedding_0.6B_finetuned_inbatch_pro_earlystop
+2025-09-25 12:03:40,715 [INFO] Load pretrained SentenceTransformer: /mnt/fang/qwen3_embedding_0.6B_finetuned_inbatch_pro_earlystop
+2025-09-25 12:03:40,716 [WARNING] No sentence-transformers model found with name /mnt/fang/qwen3_embedding_0.6B_finetuned_inbatch_pro_earlystop. Creating a new one with mean pooling.
+2025-09-25 12:03:45,684 [INFO] 嵌入模型加载成功，维度: 1024
+2025-09-25 12:03:45,760 [INFO] Loading faiss with AVX512 support.
+2025-09-25 12:03:45,810 [INFO] Successfully loaded faiss with AVX512 support.
+2025-09-25 12:03:45,814 [INFO] Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes. This is only an error if you're trying to use GPU Faiss.
+2025-09-25 12:03:45,817 [WARNING] 加载向量库分片失败: Error in faiss::FileIOReader::FileIOReader(const char*) at /project/faiss/faiss/impl/io.cpp:67: Error: 'f' failed: could not open /home/fangyi1/Deepseek项目/RAG项目/medical_retrieval/MedSE2RAG/data/vector_database/all_pdfs_vector_db_qwen3/index.faiss for reading: No such file or directory
+2025-09-25 12:03:45,824 [INFO] 症状向量库加载完成: 426文档
+2025-09-25 12:03:45,824 [INFO] 向量库加载耗时: 5.74秒
+2025-09-25 12:03:45,824 [INFO] MedicalProcessor 初始化完成
+2025-09-25 12:03:45,824 [INFO] 加载输入数据
+2025-09-25 12:03:45,824 [INFO] 使用单个术语: '我感觉头晕晕的，很不舒服'
+2025-09-25 12:03:45,825 [ERROR] 问题类型文件不存在: 症状
+2025-09-25 12:03:45,825 [ERROR] 未能加载问题类型
+2025-09-25 12:05:19,088 [INFO] 使用设备: cuda
+2025-09-25 12:05:19,088 [INFO] 使用模型: deepseek-chat
+2025-09-25 12:05:19,088 [INFO] 开始初始化 MedicalProcessor 组件
+2025-09-25 12:05:19,088 [INFO] 初始化API客户端: DeepSeek API
+2025-09-25 12:05:19,319 [INFO] API客户端初始化成功
+2025-09-25 12:05:19,319 [INFO] 初始化重排序模型: Qwen/Qwen3-Reranker-0.6B
+2025-09-25 12:05:23,434 [INFO] 重排序模型初始化成功
+2025-09-25 12:05:23,434 [INFO] 开始加载向量库...
+2025-09-25 12:05:23,434 [INFO] 初始化嵌入模型...
+2025-09-25 12:05:23,434 [INFO] 设备: cuda
+2025-09-25 12:05:23,434 [INFO] 模型路径: /mnt/fang/qwen3_embedding_0.6B_finetuned_inbatch_pro_earlystop
+2025-09-25 12:05:23,913 [INFO] Load pretrained SentenceTransformer: /mnt/fang/qwen3_embedding_0.6B_finetuned_inbatch_pro_earlystop
+2025-09-25 12:05:23,913 [WARNING] No sentence-transformers model found with name /mnt/fang/qwen3_embedding_0.6B_finetuned_inbatch_pro_earlystop. Creating a new one with mean pooling.
+2025-09-25 12:05:26,461 [INFO] 嵌入模型加载成功，维度: 1024
+2025-09-25 12:05:26,539 [INFO] Loading faiss with AVX512 support.
+2025-09-25 12:05:26,562 [INFO] Successfully loaded faiss with AVX512 support.
+2025-09-25 12:05:26,565 [INFO] Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes. This is only an error if you're trying to use GPU Faiss.
+2025-09-25 12:05:26,565 [WARNING] 加载向量库分片失败: Error in faiss::FileIOReader::FileIOReader(const char*) at /project/faiss/faiss/impl/io.cpp:67: Error: 'f' failed: could not open /home/fangyi1/Deepseek项目/RAG项目/medical_retrieval/MedSE2RAG/data/vector_database/all_pdfs_vector_db_qwen3/index.faiss for reading: No such file or directory
+2025-09-25 12:05:26,567 [INFO] 症状向量库加载完成: 426文档
+2025-09-25 12:05:26,567 [INFO] 向量库加载耗时: 3.13秒
+2025-09-25 12:05:26,567 [INFO] MedicalProcessor 初始化完成
+2025-09-25 12:05:26,567 [INFO] 加载输入数据
+2025-09-25 12:05:26,567 [INFO] 使用单个术语: '我感觉头晕晕的，很不舒服'
+2025-09-25 12:05:26,567 [INFO] 使用单个问题类型: '症状'
+2025-09-25 12:05:26,567 [INFO] 总查询数: 1 (1个术语 × 1个问题类型)
+2025-09-25 12:05:26,567 [INFO] 检查历史处理进度
+2025-09-25 12:05:26,567 [INFO] 已加载 0 个已完成查询的历史记录
+2025-09-25 12:05:26,567 [INFO] 将处理 1 个查询
+2025-09-25 12:05:26,567 [INFO] 加载历史结果以便合并
+2025-09-25 12:05:26,567 [INFO] ==================================================
+2025-09-25 12:05:26,568 [INFO] 开始批量处理查询
+2025-09-25 12:05:26,568 [INFO] 待处理: 1 / 总计: 1 个查询
+2025-09-25 12:05:26,568 [INFO] ==================================================
+2025-09-25 12:05:26,568 [INFO] --- 批次 1/1 开始处理 (1个查询) ---
+2025-09-25 12:05:26,568 [INFO] [1-1/1] 启动处理查询 ID 1: '我感觉头晕晕的，很不舒服的症状'
+2025-09-25 12:05:26,568 [INFO] --- 启动处理查询 ID 1: '我感觉头晕晕的，很不舒服的症状' (任务类型: normal) ---
+2025-09-25 12:05:26,625 [WARNING] 重排序批次失败: name 'middle' is not defined
+2025-09-25 12:05:27,103 [INFO] HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2025-09-25 12:05:45,573 [ERROR] 处理 symptom_kb 时出现异常: name 'os' is not defined
+2025-09-25 12:05:45,573 [INFO] --- 查询 ID 1 处理完毕。总状态: failed ---
+2025-09-25 12:05:45,573 [INFO]   ❌ ID 1 (19.01s) -> 总状态: failed (主知识库: (未启用), 症状知识库: ✅)
+2025-09-25 12:05:45,573 [INFO] 保存批次进度和中间结果
+2025-09-25 12:05:45,746 [INFO] 中间结果已保存到: ./output/medical_rag_results_summary.xlsx
+2025-09-25 12:05:45,746 [INFO] 所有批次处理完毕，保存最终结果
+2025-09-25 12:05:45,769 [INFO] 最终结果已保存到: ./output/medical_rag_results_summary.xlsx
+2025-09-25 12:05:45,769 [INFO] ==================================================
+2025-09-25 12:05:45,769 [INFO]           批处理任务完成          
+2025-09-25 12:05:45,769 [INFO] ==================================================
+2025-09-25 12:05:45,769 [INFO] 总耗时: 19.2 秒
+2025-09-25 12:05:45,769 [INFO] 结果统计:
+2025-09-25 12:05:45,769 [INFO]   完全成功: 0 个查询
+2025-09-25 12:05:45,769 [INFO]   元评估后成功整合: 0 个查询
+2025-09-25 12:05:45,769 [INFO]   部分成功: 0 个查询
+2025-09-25 12:05:45,769 [INFO]   不一致但元评估失败: 0 个查询
+2025-09-25 12:05:45,769 [INFO]   完全失败: 1 个查询
+2025-09-25 12:05:45,769 [INFO]   主知识库被使用: 0 个
+2025-09-25 12:05:45,769 [INFO]   主知识库启用重排序: 0 个
+2025-09-25 12:05:45,769 [INFO]   症状知识库被使用: 1 个
+2025-09-25 12:05:45,770 [INFO]   症状知识库启用重排序: 1 个
+2025-09-25 12:05:45,770 [INFO]   总计记录的查询: 1 个
+2025-09-25 12:05:45,770 [INFO] ==================================================
+2025-09-25 12:08:57,247 [INFO] 使用设备: cuda
+2025-09-25 12:08:57,248 [INFO] 使用模型: deepseek-chat
+2025-09-25 12:08:57,248 [INFO] 开始初始化 MedicalProcessor 组件
+2025-09-25 12:08:57,248 [INFO] 初始化API客户端: DeepSeek API
+2025-09-25 12:08:57,563 [INFO] API客户端初始化成功
+2025-09-25 12:08:57,563 [INFO] 初始化重排序模型: Qwen/Qwen3-Reranker-0.6B
+2025-09-25 12:09:00,487 [INFO] 重排序模型初始化成功
+2025-09-25 12:09:00,487 [INFO] 开始加载向量库...
+2025-09-25 12:09:00,487 [INFO] 初始化嵌入模型...
+2025-09-25 12:09:00,487 [INFO] 设备: cuda
+2025-09-25 12:09:00,487 [INFO] 模型路径: /mnt/fang/qwen3_embedding_0.6B_finetuned_inbatch_pro_earlystop
+2025-09-25 12:09:01,070 [INFO] Load pretrained SentenceTransformer: /mnt/fang/qwen3_embedding_0.6B_finetuned_inbatch_pro_earlystop
+2025-09-25 12:09:01,070 [WARNING] No sentence-transformers model found with name /mnt/fang/qwen3_embedding_0.6B_finetuned_inbatch_pro_earlystop. Creating a new one with mean pooling.
+2025-09-25 12:09:03,758 [INFO] 嵌入模型加载成功，维度: 1024
+2025-09-25 12:09:03,838 [INFO] Loading faiss with AVX512 support.
+2025-09-25 12:09:03,856 [INFO] Successfully loaded faiss with AVX512 support.
+2025-09-25 12:09:03,859 [INFO] Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes. This is only an error if you're trying to use GPU Faiss.
+2025-09-25 12:09:03,975 [INFO] 主向量库加载完成: 5164文档
+2025-09-25 12:09:03,977 [INFO] 症状向量库加载完成: 426文档
+2025-09-25 12:09:03,977 [INFO] 向量库加载耗时: 3.49秒
+2025-09-25 12:09:03,977 [INFO] MedicalProcessor 初始化完成
+2025-09-25 12:09:03,977 [INFO] 加载输入数据
+2025-09-25 12:09:03,977 [INFO] 使用单个术语: '我感觉头晕晕的，很不舒服'
+2025-09-25 12:09:03,977 [INFO] 使用单个问题类型: '症状'
+2025-09-25 12:09:03,977 [INFO] 总查询数: 1 (1个术语 × 1个问题类型)
+2025-09-25 12:09:03,977 [INFO] 检查历史处理进度
+2025-09-25 12:09:03,977 [INFO] 发现历史进度文件，0个查询已完成
+2025-09-25 12:09:03,977 [INFO] 已加载 0 个已完成查询的历史记录
+2025-09-25 12:09:03,977 [INFO] 将处理 1 个查询
+2025-09-25 12:09:03,977 [INFO] 加载历史结果以便合并
+2025-09-25 12:09:04,061 [INFO] 已加载 0 条历史结果
+2025-09-25 12:09:04,061 [INFO] ==================================================
+2025-09-25 12:09:04,061 [INFO] 开始批量处理查询
+2025-09-25 12:09:04,061 [INFO] 待处理: 1 / 总计: 1 个查询
+2025-09-25 12:09:04,061 [INFO] ==================================================
+2025-09-25 12:09:04,061 [INFO] --- 批次 2/1 开始处理 (1个查询) ---
+2025-09-25 12:09:04,061 [INFO] [2-1/1] 启动处理查询 ID 1: '我感觉头晕晕的，很不舒服的症状'
+2025-09-25 12:09:04,061 [INFO] --- 启动处理查询 ID 1: '我感觉头晕晕的，很不舒服的症状' (任务类型: normal) ---
+2025-09-25 12:09:09,260 [INFO] HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2025-09-25 12:09:32,478 [ERROR] 处理 symptom_kb 时出现异常: name 'os' is not defined
+2025-09-25 12:09:37,387 [INFO] HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2025-09-25 12:10:10,469 [ERROR] 处理 main_kb 时出现异常: name 'os' is not defined
+2025-09-25 12:10:10,470 [INFO] --- 查询 ID 1 处理完毕。总状态: failed ---
+2025-09-25 12:10:10,470 [INFO]   ❌ ID 1 (66.41s) -> 总状态: failed (主知识库: ✅, 症状知识库: ✅)
+2025-09-25 12:10:10,470 [INFO] 保存批次进度和中间结果
+2025-09-25 12:10:10,506 [INFO] 中间结果已保存到: ./output/medical_rag_results_summary.xlsx
+2025-09-25 12:10:10,506 [INFO] 所有批次处理完毕，保存最终结果
+2025-09-25 12:10:10,523 [INFO] 最终结果已保存到: ./output/medical_rag_results_summary.xlsx
+2025-09-25 12:10:10,523 [INFO] ==================================================
+2025-09-25 12:10:10,523 [INFO]           批处理任务完成          
+2025-09-25 12:10:10,523 [INFO] ==================================================
+2025-09-25 12:10:10,523 [INFO] 总耗时: 66.5 秒
+2025-09-25 12:10:10,523 [INFO] 结果统计:
+2025-09-25 12:10:10,523 [INFO]   完全成功: 0 个查询
+2025-09-25 12:10:10,523 [INFO]   元评估后成功整合: 0 个查询
+2025-09-25 12:10:10,523 [INFO]   部分成功: 0 个查询
+2025-09-25 12:10:10,523 [INFO]   不一致但元评估失败: 0 个查询
+2025-09-25 12:10:10,523 [INFO]   完全失败: 1 个查询
+2025-09-25 12:10:10,523 [INFO]   主知识库被使用: 1 个
+2025-09-25 12:10:10,523 [INFO]   主知识库启用重排序: 1 个
+2025-09-25 12:10:10,523 [INFO]   症状知识库被使用: 1 个
+2025-09-25 12:10:10,523 [INFO]   症状知识库启用重排序: 1 个
+2025-09-25 12:10:10,523 [INFO]   总计记录的查询: 1 个
+2025-09-25 12:10:10,523 [INFO] ==================================================
+2025-09-25 12:10:39,647 [INFO] 使用设备: cuda
+2025-09-25 12:10:39,647 [INFO] 使用模型: deepseek-chat
+2025-09-25 12:10:39,647 [INFO] 开始初始化 MedicalProcessor 组件
+2025-09-25 12:10:39,647 [INFO] 初始化API客户端: DeepSeek API
+2025-09-25 12:10:39,963 [INFO] API客户端初始化成功
+2025-09-25 12:10:39,963 [INFO] 初始化重排序模型: Qwen/Qwen3-Reranker-0.6B
+2025-09-25 12:10:43,906 [INFO] 重排序模型初始化成功
+2025-09-25 12:10:43,906 [INFO] 开始加载向量库...
+2025-09-25 12:10:43,906 [INFO] 初始化嵌入模型...
+2025-09-25 12:10:43,906 [INFO] 设备: cuda
+2025-09-25 12:10:43,906 [INFO] 模型路径: /mnt/fang/qwen3_embedding_0.6B_finetuned_inbatch_pro_earlystop
+2025-09-25 12:10:44,518 [INFO] Load pretrained SentenceTransformer: /mnt/fang/qwen3_embedding_0.6B_finetuned_inbatch_pro_earlystop
+2025-09-25 12:10:44,518 [WARNING] No sentence-transformers model found with name /mnt/fang/qwen3_embedding_0.6B_finetuned_inbatch_pro_earlystop. Creating a new one with mean pooling.
+2025-09-25 12:10:47,158 [INFO] 嵌入模型加载成功，维度: 1024
+2025-09-25 12:10:47,229 [INFO] Loading faiss with AVX512 support.
+2025-09-25 12:10:47,246 [INFO] Successfully loaded faiss with AVX512 support.
+2025-09-25 12:10:47,249 [INFO] Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes. This is only an error if you're trying to use GPU Faiss.
+2025-09-25 12:10:47,315 [INFO] 主向量库加载完成: 5164文档
+2025-09-25 12:10:47,317 [INFO] 症状向量库加载完成: 426文档
+2025-09-25 12:10:47,317 [INFO] 向量库加载耗时: 3.41秒
+2025-09-25 12:10:47,317 [INFO] MedicalProcessor 初始化完成
+2025-09-25 12:10:47,318 [INFO] 加载输入数据
+2025-09-25 12:10:47,318 [INFO] 使用单个术语: '我感觉头晕晕的，很不舒服'
+2025-09-25 12:10:47,318 [INFO] 使用单个问题类型: '症状'
+2025-09-25 12:10:47,318 [INFO] 总查询数: 1 (1个术语 × 1个问题类型)
+2025-09-25 12:10:47,318 [INFO] 检查历史处理进度
+2025-09-25 12:10:47,318 [INFO] 发现历史进度文件，0个查询已完成
+2025-09-25 12:10:47,318 [INFO] 已加载 0 个已完成查询的历史记录
+2025-09-25 12:10:47,318 [INFO] 将处理 1 个查询
+2025-09-25 12:10:47,318 [INFO] 加载历史结果以便合并
+2025-09-25 12:10:47,388 [INFO] 已加载 0 条历史结果
+2025-09-25 12:10:47,388 [INFO] ==================================================
+2025-09-25 12:10:47,388 [INFO] 开始批量处理查询
+2025-09-25 12:10:47,388 [INFO] 待处理: 1 / 总计: 1 个查询
+2025-09-25 12:10:47,388 [INFO] ==================================================
+2025-09-25 12:10:47,388 [INFO] --- 批次 3/1 开始处理 (1个查询) ---
+2025-09-25 12:10:47,388 [INFO] [3-1/1] 启动处理查询 ID 1: '我感觉头晕晕的，很不舒服的症状'
+2025-09-25 12:10:47,389 [INFO] --- 启动处理查询 ID 1: '我感觉头晕晕的，很不舒服的症状' (任务类型: normal) ---
+2025-09-25 12:10:52,985 [INFO] HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2025-09-25 12:11:22,734 [INFO] HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2025-09-25 12:11:55,009 [INFO] --- 查询 ID 1 处理完毕。总状态: completed ---
+2025-09-25 12:11:55,010 [INFO]   ✅ ID 1 (67.62s) -> 总状态: completed (主知识库: ✅, 症状知识库: ✅)
+2025-09-25 12:11:55,010 [INFO] 保存批次进度和中间结果
+2025-09-25 12:11:55,048 [INFO] 中间结果已保存到: ./output/medical_rag_results_summary.xlsx
+2025-09-25 12:11:55,048 [INFO] 所有批次处理完毕，保存最终结果
+2025-09-25 12:11:55,070 [INFO] 最终结果已保存到: ./output/medical_rag_results_summary.xlsx
+2025-09-25 12:11:55,070 [INFO] ==================================================
+2025-09-25 12:11:55,070 [INFO]           批处理任务完成          
+2025-09-25 12:11:55,070 [INFO] ==================================================
+2025-09-25 12:11:55,070 [INFO] 总耗时: 67.7 秒
+2025-09-25 12:11:55,070 [INFO] 结果统计:
+2025-09-25 12:11:55,070 [INFO]   完全成功: 1 个查询
+2025-09-25 12:11:55,070 [INFO]   元评估后成功整合: 0 个查询
+2025-09-25 12:11:55,070 [INFO]   部分成功: 0 个查询
+2025-09-25 12:11:55,071 [INFO]   不一致但元评估失败: 0 个查询
+2025-09-25 12:11:55,071 [INFO]   完全失败: 0 个查询
+2025-09-25 12:11:55,071 [INFO]   主知识库被使用: 1 个
+2025-09-25 12:11:55,071 [INFO]   主知识库启用重排序: 1 个
+2025-09-25 12:11:55,071 [INFO]   症状知识库被使用: 1 个
+2025-09-25 12:11:55,071 [INFO]   症状知识库启用重排序: 1 个
+2025-09-25 12:11:55,071 [INFO]   总计记录的查询: 1 个
+2025-09-25 12:11:55,071 [INFO] ==================================================
+2025-09-25 12:15:51,677 [INFO] 使用设备: cuda
+2025-09-25 12:15:51,677 [INFO] 使用模型: deepseek-chat
+2025-09-25 12:15:51,677 [INFO] 开始初始化 MedicalProcessor 组件
+2025-09-25 12:15:51,677 [INFO] 初始化API客户端: DeepSeek API
+2025-09-25 12:15:52,001 [INFO] API客户端初始化成功
+2025-09-25 12:15:52,001 [INFO] 初始化重排序模型: Qwen/Qwen3-Reranker-0.6B
+2025-09-25 12:15:55,277 [INFO] 重排序模型初始化成功
+2025-09-25 12:15:55,277 [INFO] 开始加载向量库...
+2025-09-25 12:15:55,277 [INFO] 初始化嵌入模型...
+2025-09-25 12:15:55,277 [INFO] 设备: cuda
+2025-09-25 12:15:55,278 [INFO] 模型路径: /mnt/fang/qwen3_embedding_0.6B_finetuned_inbatch_pro_earlystop
+2025-09-25 12:15:55,882 [INFO] Load pretrained SentenceTransformer: /mnt/fang/qwen3_embedding_0.6B_finetuned_inbatch_pro_earlystop
+2025-09-25 12:15:55,882 [WARNING] No sentence-transformers model found with name /mnt/fang/qwen3_embedding_0.6B_finetuned_inbatch_pro_earlystop. Creating a new one with mean pooling.
+2025-09-25 12:15:57,990 [INFO] 嵌入模型加载成功，维度: 1024
+2025-09-25 12:15:58,072 [INFO] Loading faiss with AVX512 support.
+2025-09-25 12:15:58,099 [INFO] Successfully loaded faiss with AVX512 support.
+2025-09-25 12:15:58,104 [INFO] Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes. This is only an error if you're trying to use GPU Faiss.
+2025-09-25 12:15:58,188 [INFO] 主向量库加载完成: 5164文档
+2025-09-25 12:15:58,191 [INFO] 症状向量库加载完成: 426文档
+2025-09-25 12:15:58,191 [INFO] 向量库加载耗时: 2.91秒
+2025-09-25 12:15:58,191 [INFO] MedicalProcessor 初始化完成
+2025-09-25 12:15:58,191 [INFO] 加载输入数据
+2025-09-25 12:15:58,191 [INFO] 使用单个术语: '我感觉头晕晕的，很不舒服'
+2025-09-25 12:15:58,191 [INFO] 使用单个问题类型: '症状'
+2025-09-25 12:15:58,191 [INFO] 总查询数: 1 (1个术语 × 1个问题类型)
+2025-09-25 12:15:58,191 [INFO] 检查历史处理进度
+2025-09-25 12:15:58,191 [INFO] 发现历史进度文件，1个查询已完成
+2025-09-25 12:15:58,191 [INFO] 已加载 1 个已完成查询的历史记录
+2025-09-25 12:15:58,191 [INFO] 将处理 0 个查询
+2025-09-25 12:15:58,191 [INFO] 所有查询已完成，或没有待处理的查询
+2025-09-25 12:16:51,065 [INFO] 使用设备: cuda
+2025-09-25 12:16:51,065 [INFO] 使用模型: deepseek-chat
+2025-09-25 12:16:51,065 [INFO] 开始初始化 MedicalProcessor 组件
+2025-09-25 12:16:51,065 [INFO] 初始化API客户端: DeepSeek API
+2025-09-25 12:16:51,390 [INFO] API客户端初始化成功
+2025-09-25 12:16:51,391 [INFO] 初始化重排序模型: Qwen/Qwen3-Reranker-0.6B
+2025-09-25 12:16:51,889 [WARNING] HTTP Error 429 thrown while requesting HEAD https://hf-mirror.com/api/resolve-cache/models/Qwen/Qwen3-Reranker-0.6B/6e9e69830b95c52b5fd889b7690dda3329508de3/tokenizer_config.json
+2025-09-25 12:16:51,889 [WARNING] Retrying in 1s [Retry 1/5].
+2025-09-25 12:16:52,965 [WARNING] HTTP Error 429 thrown while requesting HEAD https://hf-mirror.com/api/resolve-cache/models/Qwen/Qwen3-Reranker-0.6B/6e9e69830b95c52b5fd889b7690dda3329508de3/tokenizer_config.json
+2025-09-25 12:16:52,965 [WARNING] Retrying in 2s [Retry 2/5].
+2025-09-25 12:16:55,041 [WARNING] HTTP Error 429 thrown while requesting HEAD https://hf-mirror.com/api/resolve-cache/models/Qwen/Qwen3-Reranker-0.6B/6e9e69830b95c52b5fd889b7690dda3329508de3/tokenizer_config.json
+2025-09-25 12:16:55,041 [WARNING] Retrying in 4s [Retry 3/5].
+2025-09-25 12:16:59,119 [WARNING] HTTP Error 429 thrown while requesting HEAD https://hf-mirror.com/api/resolve-cache/models/Qwen/Qwen3-Reranker-0.6B/6e9e69830b95c52b5fd889b7690dda3329508de3/tokenizer_config.json
+2025-09-25 12:16:59,119 [WARNING] Retrying in 8s [Retry 4/5].
+2025-09-25 12:17:07,195 [WARNING] HTTP Error 429 thrown while requesting HEAD https://hf-mirror.com/api/resolve-cache/models/Qwen/Qwen3-Reranker-0.6B/6e9e69830b95c52b5fd889b7690dda3329508de3/tokenizer_config.json
+2025-09-25 12:17:07,195 [WARNING] Retrying in 8s [Retry 5/5].
+2025-09-25 12:17:15,277 [WARNING] HTTP Error 429 thrown while requesting HEAD https://hf-mirror.com/api/resolve-cache/models/Qwen/Qwen3-Reranker-0.6B/6e9e69830b95c52b5fd889b7690dda3329508de3/tokenizer_config.json
+2025-09-25 12:17:16,092 [WARNING] HTTP Error 429 thrown while requesting HEAD https://hf-mirror.com/api/resolve-cache/models/Qwen/Qwen3-Reranker-0.6B/6e9e69830b95c52b5fd889b7690dda3329508de3/config.json
+2025-09-25 12:17:16,093 [WARNING] Retrying in 1s [Retry 1/5].
+2025-09-25 12:17:17,169 [WARNING] HTTP Error 429 thrown while requesting HEAD https://hf-mirror.com/api/resolve-cache/models/Qwen/Qwen3-Reranker-0.6B/6e9e69830b95c52b5fd889b7690dda3329508de3/config.json
+2025-09-25 12:17:17,170 [WARNING] Retrying in 2s [Retry 2/5].
+2025-09-25 12:17:19,254 [WARNING] HTTP Error 429 thrown while requesting HEAD https://hf-mirror.com/api/resolve-cache/models/Qwen/Qwen3-Reranker-0.6B/6e9e69830b95c52b5fd889b7690dda3329508de3/config.json
+2025-09-25 12:17:19,255 [WARNING] Retrying in 4s [Retry 3/5].
+2025-09-25 12:17:23,332 [WARNING] HTTP Error 429 thrown while requesting HEAD https://hf-mirror.com/api/resolve-cache/models/Qwen/Qwen3-Reranker-0.6B/6e9e69830b95c52b5fd889b7690dda3329508de3/config.json
+2025-09-25 12:17:23,332 [WARNING] Retrying in 8s [Retry 4/5].
+2025-09-25 12:17:31,414 [WARNING] HTTP Error 429 thrown while requesting HEAD https://hf-mirror.com/api/resolve-cache/models/Qwen/Qwen3-Reranker-0.6B/6e9e69830b95c52b5fd889b7690dda3329508de3/config.json
+2025-09-25 12:17:31,414 [WARNING] Retrying in 8s [Retry 5/5].
+2025-09-25 12:17:39,496 [WARNING] HTTP Error 429 thrown while requesting HEAD https://hf-mirror.com/api/resolve-cache/models/Qwen/Qwen3-Reranker-0.6B/6e9e69830b95c52b5fd889b7690dda3329508de3/config.json
+2025-09-25 12:17:41,029 [WARNING] HTTP Error 429 thrown while requesting HEAD https://hf-mirror.com/api/resolve-cache/models/Qwen/Qwen3-Reranker-0.6B/6e9e69830b95c52b5fd889b7690dda3329508de3/generation_config.json
+2025-09-25 12:17:41,029 [WARNING] Retrying in 1s [Retry 1/5].
+2025-09-25 12:17:42,104 [WARNING] HTTP Error 429 thrown while requesting HEAD https://hf-mirror.com/api/resolve-cache/models/Qwen/Qwen3-Reranker-0.6B/6e9e69830b95c52b5fd889b7690dda3329508de3/generation_config.json
+2025-09-25 12:17:42,104 [WARNING] Retrying in 2s [Retry 2/5].
+2025-09-25 12:17:44,183 [WARNING] HTTP Error 429 thrown while requesting HEAD https://hf-mirror.com/api/resolve-cache/models/Qwen/Qwen3-Reranker-0.6B/6e9e69830b95c52b5fd889b7690dda3329508de3/generation_config.json
+2025-09-25 12:17:44,183 [WARNING] Retrying in 4s [Retry 3/5].
+2025-09-25 12:17:48,262 [WARNING] HTTP Error 429 thrown while requesting HEAD https://hf-mirror.com/api/resolve-cache/models/Qwen/Qwen3-Reranker-0.6B/6e9e69830b95c52b5fd889b7690dda3329508de3/generation_config.json
+2025-09-25 12:17:48,262 [WARNING] Retrying in 8s [Retry 4/5].
+2025-09-25 12:18:56,625 [INFO] 使用设备: cuda
+2025-09-25 12:18:56,625 [INFO] 使用模型: deepseek-chat
+2025-09-25 12:18:56,626 [INFO] 开始初始化 MedicalProcessor 组件
+2025-09-25 12:18:56,626 [INFO] 初始化API客户端: DeepSeek API
+2025-09-25 12:18:56,858 [INFO] API客户端初始化成功
+2025-09-25 12:18:56,858 [INFO] 初始化重排序模型: Qwen/Qwen3-Reranker-0.6B
+2025-09-25 12:19:00,413 [INFO] 重排序模型初始化成功
+2025-09-25 12:19:00,413 [INFO] 开始加载向量库...
+2025-09-25 12:19:00,413 [INFO] 初始化嵌入模型...
+2025-09-25 12:19:00,413 [INFO] 设备: cuda
+2025-09-25 12:19:00,413 [INFO] 模型路径: /mnt/fang/qwen3_embedding_0.6B_finetuned_inbatch_pro_earlystop
+2025-09-25 12:19:01,049 [INFO] Load pretrained SentenceTransformer: /mnt/fang/qwen3_embedding_0.6B_finetuned_inbatch_pro_earlystop
+2025-09-25 12:19:01,049 [WARNING] No sentence-transformers model found with name /mnt/fang/qwen3_embedding_0.6B_finetuned_inbatch_pro_earlystop. Creating a new one with mean pooling.
+2025-09-25 12:19:03,780 [INFO] 嵌入模型加载成功，维度: 1024
+2025-09-25 12:19:03,853 [INFO] Loading faiss with AVX512 support.
+2025-09-25 12:19:03,871 [INFO] Successfully loaded faiss with AVX512 support.
+2025-09-25 12:19:03,874 [INFO] Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes. This is only an error if you're trying to use GPU Faiss.
+2025-09-25 12:19:03,948 [INFO] 主向量库加载完成: 5164文档
+2025-09-25 12:19:03,950 [INFO] 症状向量库加载完成: 426文档
+2025-09-25 12:19:03,950 [INFO] 向量库加载耗时: 3.54秒
+2025-09-25 12:19:03,950 [INFO] MedicalProcessor 初始化完成
+2025-09-25 12:19:03,950 [INFO] 加载输入数据
+2025-09-25 12:19:03,950 [INFO] 使用单个术语: '我感觉头晕晕的，很不舒服'
+2025-09-25 12:19:03,950 [INFO] 使用单个问题类型: '症状'
+2025-09-25 12:19:03,950 [INFO] 总查询数: 1 (1个术语 × 1个问题类型)
+2025-09-25 12:19:03,950 [INFO] 检查历史处理进度
+2025-09-25 12:19:03,950 [INFO] 已加载 0 个已完成查询的历史记录
+2025-09-25 12:19:03,950 [INFO] 将处理 1 个查询
+2025-09-25 12:19:03,950 [INFO] 加载历史结果以便合并
+2025-09-25 12:19:03,950 [INFO] ==================================================
+2025-09-25 12:19:03,950 [INFO] 开始批量处理查询
+2025-09-25 12:19:03,950 [INFO] 待处理: 1 / 总计: 1 个查询
+2025-09-25 12:19:03,950 [INFO] ==================================================
+2025-09-25 12:19:03,950 [INFO] --- 批次 1/1 开始处理 (1个查询) ---
+2025-09-25 12:19:03,950 [INFO] [1-1/1] 启动处理查询 ID 1: '我感觉头晕晕的，很不舒服的症状'
+2025-09-25 12:19:03,950 [INFO] --- 启动处理查询 ID 1: '我感觉头晕晕的，很不舒服的症状' (任务类型: symptom_extraction) ---
+2025-09-25 12:19:09,012 [INFO] HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2025-09-25 12:19:17,330 [INFO] HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2025-09-25 12:19:20,132 [INFO] HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2025-09-25 12:19:22,906 [INFO] --- 查询 ID 1 处理完毕。总状态: completed_with_meta_eval ---
+2025-09-25 12:19:22,906 [INFO]   ✅ ID 1 (18.96s) -> 总状态: completed_with_meta_eval (主知识库: ✅, 症状知识库: ✅)
+2025-09-25 12:19:22,906 [INFO] 保存批次进度和中间结果
+2025-09-25 12:19:23,021 [INFO] 中间结果已保存到: ./output/medical_rag_results_summary.xlsx
+2025-09-25 12:19:23,021 [INFO] 所有批次处理完毕，保存最终结果
+2025-09-25 12:19:23,042 [INFO] 最终结果已保存到: ./output/medical_rag_results_summary.xlsx
+2025-09-25 12:19:23,042 [INFO] ==================================================
+2025-09-25 12:19:23,042 [INFO]           批处理任务完成          
+2025-09-25 12:19:23,042 [INFO] ==================================================
+2025-09-25 12:19:23,042 [INFO] 总耗时: 19.1 秒
+2025-09-25 12:19:23,042 [INFO] 结果统计:
+2025-09-25 12:19:23,042 [INFO]   完全成功: 0 个查询
+2025-09-25 12:19:23,042 [INFO]   元评估后成功整合: 1 个查询
+2025-09-25 12:19:23,042 [INFO]   部分成功: 0 个查询
+2025-09-25 12:19:23,042 [INFO]   不一致但元评估失败: 0 个查询
+2025-09-25 12:19:23,042 [INFO]   完全失败: 0 个查询
+2025-09-25 12:19:23,042 [INFO]   主知识库被使用: 1 个
+2025-09-25 12:19:23,042 [INFO]   主知识库启用重排序: 1 个
+2025-09-25 12:19:23,042 [INFO]   症状知识库被使用: 1 个
+2025-09-25 12:19:23,042 [INFO]   症状知识库启用重排序: 1 个
+2025-09-25 12:19:23,042 [INFO]   总计记录的查询: 1 个
+2025-09-25 12:19:23,042 [INFO] ==================================================
+2025-09-25 12:33:56,969 [INFO] 使用设备: cuda
+2025-09-25 12:33:56,969 [INFO] 使用模型: deepseek-chat
+2025-09-25 12:33:56,969 [INFO] 开始初始化 MedicalProcessor 组件
+2025-09-25 12:33:56,969 [INFO] 初始化API客户端: DeepSeek API
+2025-09-25 12:33:57,290 [INFO] API客户端初始化成功
+2025-09-25 12:33:57,290 [INFO] 初始化重排序模型: Qwen/Qwen3-Reranker-0.6B
+2025-09-25 12:34:00,618 [INFO] 重排序模型初始化成功
+2025-09-25 12:34:00,618 [INFO] 开始加载向量库...
+2025-09-25 12:34:00,618 [INFO] 初始化嵌入模型...
+2025-09-25 12:34:00,618 [INFO] 设备: cuda
+2025-09-25 12:34:00,618 [INFO] 模型路径: /mnt/fang/qwen3_embedding_0.6B_finetuned_inbatch_pro_earlystop
+2025-09-25 12:34:01,236 [INFO] Load pretrained SentenceTransformer: /mnt/fang/qwen3_embedding_0.6B_finetuned_inbatch_pro_earlystop
+2025-09-25 12:34:01,236 [WARNING] No sentence-transformers model found with name /mnt/fang/qwen3_embedding_0.6B_finetuned_inbatch_pro_earlystop. Creating a new one with mean pooling.
+2025-09-25 12:34:03,919 [INFO] 嵌入模型加载成功，维度: 1024
+2025-09-25 12:34:03,995 [INFO] Loading faiss with AVX512 support.
+2025-09-25 12:34:04,012 [INFO] Successfully loaded faiss with AVX512 support.
+2025-09-25 12:34:04,016 [INFO] Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes. This is only an error if you're trying to use GPU Faiss.
+2025-09-25 12:34:04,078 [INFO] 主向量库加载完成: 5164文档
+2025-09-25 12:34:04,080 [INFO] 症状向量库加载完成: 426文档
+2025-09-25 12:34:04,080 [INFO] 向量库加载耗时: 3.46秒
+2025-09-25 12:34:04,080 [INFO] MedicalProcessor 初始化完成
+2025-09-25 12:34:04,080 [INFO] 加载输入数据
+2025-09-25 12:34:04,080 [INFO] 使用单个术语: '我感觉头晕晕的，很不舒服'
+2025-09-25 12:34:04,080 [INFO] 使用单个问题类型: '症状'
+2025-09-25 12:34:04,080 [INFO] 总查询数: 1 (1个术语 × 1个问题类型)
+2025-09-25 12:34:04,080 [INFO] 检查历史处理进度
+2025-09-25 12:34:04,080 [INFO] 已加载 0 个已完成查询的历史记录
+2025-09-25 12:34:04,080 [INFO] 将处理 1 个查询
+2025-09-25 12:34:04,081 [INFO] 加载历史结果以便合并
+2025-09-25 12:34:04,081 [INFO] ==================================================
+2025-09-25 12:34:04,081 [INFO] 开始批量处理查询
+2025-09-25 12:34:04,081 [INFO] 待处理: 1 / 总计: 1 个查询
+2025-09-25 12:34:04,081 [INFO] ==================================================
+2025-09-25 12:34:04,081 [INFO] --- 批次 1/1 开始处理 (1个查询) ---
+2025-09-25 12:34:04,081 [INFO] [1-1/1] 启动处理查询 ID 1: '我感觉头晕晕的，很不舒服的症状'
+2025-09-25 12:34:04,081 [INFO] --- 启动处理查询 ID 1: '我感觉头晕晕的，很不舒服的症状' (任务类型: symptom_extraction) ---
+2025-09-25 12:34:09,780 [INFO] HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2025-09-25 12:34:18,769 [INFO] HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2025-09-25 12:34:21,425 [INFO] --- 查询 ID 1 处理完毕。总状态: failed ---
+2025-09-25 12:34:21,425 [INFO]   ❌ ID 1 (17.34s) -> 总状态: failed (主知识库: ✅, 症状知识库: ✅)
+2025-09-25 12:34:21,425 [INFO] 保存批次进度和中间结果
+2025-09-25 12:34:21,518 [INFO] 中间结果已保存到: ./output/medical_rag_results_summary.xlsx
+2025-09-25 12:34:21,518 [INFO] 所有批次处理完毕，保存最终结果
+2025-09-25 12:34:21,534 [INFO] 最终结果已保存到: ./output/medical_rag_results_summary.xlsx
+2025-09-25 12:34:21,534 [INFO] ==================================================
+2025-09-25 12:34:21,535 [INFO]           批处理任务完成          
+2025-09-25 12:34:21,535 [INFO] ==================================================
+2025-09-25 12:34:21,535 [INFO] 总耗时: 17.5 秒
+2025-09-25 12:34:21,535 [INFO] 结果统计:
+2025-09-25 12:34:21,535 [INFO]   完全成功: 0 个查询
+2025-09-25 12:34:21,535 [INFO]   元评估后成功整合: 0 个查询
+2025-09-25 12:34:21,535 [INFO]   部分成功: 0 个查询
+2025-09-25 12:34:21,535 [INFO]   不一致但元评估失败: 0 个查询
+2025-09-25 12:34:21,535 [INFO]   完全失败: 1 个查询
+2025-09-25 12:34:21,535 [INFO]   主知识库被使用: 1 个
+2025-09-25 12:34:21,535 [INFO]   主知识库启用重排序: 1 个
+2025-09-25 12:34:21,535 [INFO]   症状知识库被使用: 1 个
+2025-09-25 12:34:21,535 [INFO]   症状知识库启用重排序: 1 个
+2025-09-25 12:34:21,535 [INFO]   总计记录的查询: 1 个
+2025-09-25 12:34:21,535 [INFO] ==================================================
+2025-09-25 12:37:12,257 [INFO] 使用设备: cuda
+2025-09-25 12:37:12,257 [INFO] 使用模型: deepseek-chat
+2025-09-25 12:37:12,258 [INFO] 开始初始化 MedicalProcessor 组件
+2025-09-25 12:37:12,258 [INFO] 初始化API客户端: DeepSeek API
+2025-09-25 12:37:12,587 [INFO] API客户端初始化成功
+2025-09-25 12:37:12,587 [INFO] 初始化重排序模型: Qwen/Qwen3-Reranker-0.6B
+2025-09-25 12:37:16,009 [INFO] 重排序模型初始化成功
+2025-09-25 12:37:16,010 [INFO] 开始加载向量库...
+2025-09-25 12:37:16,010 [INFO] 初始化嵌入模型...
+2025-09-25 12:37:16,010 [INFO] 设备: cuda
+2025-09-25 12:37:16,010 [INFO] 模型路径: /mnt/fang/qwen3_embedding_0.6B_finetuned_inbatch_pro_earlystop
+2025-09-25 12:37:16,708 [INFO] Load pretrained SentenceTransformer: /mnt/fang/qwen3_embedding_0.6B_finetuned_inbatch_pro_earlystop
+2025-09-25 12:37:16,709 [WARNING] No sentence-transformers model found with name /mnt/fang/qwen3_embedding_0.6B_finetuned_inbatch_pro_earlystop. Creating a new one with mean pooling.
+2025-09-25 12:37:18,972 [INFO] 嵌入模型加载成功，维度: 1024
+2025-09-25 12:37:19,026 [INFO] Loading faiss with AVX512 support.
+2025-09-25 12:37:19,044 [INFO] Successfully loaded faiss with AVX512 support.
+2025-09-25 12:37:19,047 [INFO] Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes. This is only an error if you're trying to use GPU Faiss.
+2025-09-25 12:37:19,109 [INFO] 主向量库加载完成: 5164文档
+2025-09-25 12:37:19,111 [INFO] 症状向量库加载完成: 426文档
+2025-09-25 12:37:19,111 [INFO] 向量库加载耗时: 3.10秒
+2025-09-25 12:37:19,111 [INFO] MedicalProcessor 初始化完成
+2025-09-25 12:37:19,111 [INFO] 加载输入数据
+2025-09-25 12:37:19,111 [INFO] 使用单个术语: '我感觉头晕晕的，很不舒服'
+2025-09-25 12:37:19,111 [INFO] 使用单个问题类型: '症状'
+2025-09-25 12:37:19,111 [INFO] 总查询数: 1 (1个术语 × 1个问题类型)
+2025-09-25 12:37:19,111 [INFO] 检查历史处理进度
+2025-09-25 12:37:19,111 [INFO] 已加载 0 个已完成查询的历史记录
+2025-09-25 12:37:19,111 [INFO] 将处理 1 个查询
+2025-09-25 12:37:19,111 [INFO] 加载历史结果以便合并
+2025-09-25 12:37:19,111 [INFO] ==================================================
+2025-09-25 12:37:19,112 [INFO] 开始批量处理查询
+2025-09-25 12:37:19,112 [INFO] 待处理: 1 / 总计: 1 个查询
+2025-09-25 12:37:19,112 [INFO] ==================================================
+2025-09-25 12:37:19,112 [INFO] --- 批次 1/1 开始处理 (1个查询) ---
+2025-09-25 12:37:19,112 [INFO] [1-1/1] 启动处理查询 ID 1: '我感觉头晕晕的，很不舒服的症状'
+2025-09-25 12:37:19,112 [INFO] --- 启动处理查询 ID 1: '我感觉头晕晕的，很不舒服的症状' (任务类型: symptom_extraction) ---
+2025-09-25 12:37:22,012 [INFO] HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2025-09-25 12:37:27,298 [INFO] HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2025-09-25 12:37:30,246 [INFO] 开始元评估 - 主知识库症状: ['头晕'], 症状知识库症状: ['发作性眩晕']
+2025-09-25 12:37:30,246 [INFO] 元评估提示词构建完成，开始调用API
+2025-09-25 12:37:30,324 [INFO] HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2025-09-25 12:37:32,777 [INFO] 元评估API调用结果 - 成功: True, 答案: 头晕
+2025-09-25 12:37:32,778 [INFO] 元评估解析出的症状: ['头晕']
+2025-09-25 12:37:32,778 [INFO] 元评估成功完成
+2025-09-25 12:37:32,778 [INFO] --- 查询 ID 1 处理完毕。总状态: completed_with_meta_eval ---
+2025-09-25 12:37:32,778 [INFO]   ✅ ID 1 (13.67s) -> 总状态: completed_with_meta_eval (主知识库: ✅, 症状知识库: ✅)
+2025-09-25 12:37:32,778 [INFO] 保存批次进度和中间结果
+2025-09-25 12:37:32,866 [INFO] 中间结果已保存到: ./output/medical_rag_results_summary.xlsx
+2025-09-25 12:37:32,866 [INFO] 所有批次处理完毕，保存最终结果
+2025-09-25 12:37:32,881 [INFO] 最终结果已保存到: ./output/medical_rag_results_summary.xlsx
+2025-09-25 12:37:32,881 [INFO] ==================================================
+2025-09-25 12:37:32,881 [INFO]           批处理任务完成          
+2025-09-25 12:37:32,881 [INFO] ==================================================
+2025-09-25 12:37:32,881 [INFO] 总耗时: 13.8 秒
+2025-09-25 12:37:32,881 [INFO] 结果统计:
+2025-09-25 12:37:32,881 [INFO]   完全成功: 0 个查询
+2025-09-25 12:37:32,881 [INFO]   元评估后成功整合: 1 个查询
+2025-09-25 12:37:32,881 [INFO]   部分成功: 0 个查询
+2025-09-25 12:37:32,881 [INFO]   不一致但元评估失败: 0 个查询
+2025-09-25 12:37:32,882 [INFO]   完全失败: 0 个查询
+2025-09-25 12:37:32,882 [INFO]   主知识库被使用: 1 个
+2025-09-25 12:37:32,882 [INFO]   主知识库启用重排序: 1 个
+2025-09-25 12:37:32,882 [INFO]   症状知识库被使用: 1 个
+2025-09-25 12:37:32,882 [INFO]   症状知识库启用重排序: 1 个
+2025-09-25 12:37:32,882 [INFO]   总计记录的查询: 1 个
+2025-09-25 12:37:32,882 [INFO] ==================================================
+2025-09-25 12:40:38,217 [INFO] 使用设备: cuda
+2025-09-25 12:40:38,217 [INFO] 使用模型: deepseek-chat
+2025-09-25 12:40:38,217 [INFO] 开始初始化 MedicalProcessor 组件
+2025-09-25 12:40:38,217 [INFO] 初始化API客户端: DeepSeek API
+2025-09-25 12:40:38,447 [INFO] API客户端初始化成功
+2025-09-25 12:40:38,447 [INFO] 初始化重排序模型: Qwen/Qwen3-Reranker-0.6B
+2025-09-25 12:40:41,260 [INFO] 重排序模型初始化成功
+2025-09-25 12:40:41,260 [INFO] 开始加载向量库...
+2025-09-25 12:40:41,260 [INFO] 初始化嵌入模型...
+2025-09-25 12:40:41,260 [INFO] 设备: cuda
+2025-09-25 12:40:41,260 [INFO] 模型路径: /mnt/fang/qwen3_embedding_0.6B_finetuned_inbatch_pro_earlystop
+2025-09-25 12:40:41,699 [INFO] Load pretrained SentenceTransformer: /mnt/fang/qwen3_embedding_0.6B_finetuned_inbatch_pro_earlystop
+2025-09-25 12:40:41,699 [WARNING] No sentence-transformers model found with name /mnt/fang/qwen3_embedding_0.6B_finetuned_inbatch_pro_earlystop. Creating a new one with mean pooling.
+2025-09-25 12:40:43,421 [INFO] 嵌入模型加载成功，维度: 1024
+2025-09-25 12:40:43,474 [INFO] Loading faiss with AVX512 support.
+2025-09-25 12:40:43,491 [INFO] Successfully loaded faiss with AVX512 support.
+2025-09-25 12:40:43,494 [INFO] Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes. This is only an error if you're trying to use GPU Faiss.
+2025-09-25 12:40:43,556 [INFO] 主向量库加载完成: 5164文档
+2025-09-25 12:40:43,558 [INFO] 症状向量库加载完成: 426文档
+2025-09-25 12:40:43,558 [INFO] 向量库加载耗时: 2.30秒
+2025-09-25 12:40:43,558 [INFO] MedicalProcessor 初始化完成
+2025-09-25 12:40:43,558 [INFO] 加载输入数据
+2025-09-25 12:40:43,558 [INFO] 使用单个术语: '我感觉头晕晕的，很不舒服'
+2025-09-25 12:40:43,558 [INFO] 使用单个问题类型: '症状'
+2025-09-25 12:40:43,558 [INFO] 总查询数: 1 (1个术语 × 1个问题类型)
+2025-09-25 12:40:43,558 [INFO] 检查历史处理进度
+2025-09-25 12:40:43,558 [INFO] 已加载 0 个已完成查询的历史记录
+2025-09-25 12:40:43,558 [INFO] 将处理 1 个查询
+2025-09-25 12:40:43,558 [INFO] 加载历史结果以便合并
+2025-09-25 12:40:43,558 [INFO] ==================================================
+2025-09-25 12:40:43,558 [INFO] 开始批量处理查询
+2025-09-25 12:40:43,558 [INFO] 待处理: 1 / 总计: 1 个查询
+2025-09-25 12:40:43,558 [INFO] ==================================================
+2025-09-25 12:40:43,559 [INFO] --- 批次 1/1 开始处理 (1个查询) ---
+2025-09-25 12:40:43,559 [INFO] [1-1/1] 启动处理查询 ID 1: '我感觉头晕晕的，很不舒服的症状'
+2025-09-25 12:40:43,559 [INFO] --- 启动处理查询 ID 1: '我感觉头晕晕的，很不舒服的症状' (任务类型: symptom_extraction) ---
+2025-09-25 12:40:46,559 [INFO] HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2025-09-25 12:40:52,468 [INFO] HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2025-09-25 12:40:56,038 [INFO] 开始元评估 - 主知识库症状: ['头晕'], 症状知识库症状: ['发作性眩晕']
+2025-09-25 12:40:56,039 [INFO] 元评估提示词构建完成，开始调用API
+2025-09-25 12:40:56,119 [INFO] HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2025-09-25 12:40:58,898 [INFO] 元评估API调用结果 - 成功: True, 答案: 头晕
+2025-09-25 12:40:58,898 [INFO] 元评估解析出的症状: ['头晕']
+2025-09-25 12:40:58,898 [INFO] 元评估成功完成
+2025-09-25 12:40:58,898 [INFO] --- 查询 ID 1 处理完毕。总状态: completed_with_meta_eval ---
+2025-09-25 12:40:58,899 [INFO]   ✅ ID 1 (15.34s) -> 总状态: completed_with_meta_eval (主知识库: ✅, 症状知识库: ✅)
+2025-09-25 12:40:58,899 [INFO] 保存批次进度和中间结果
+2025-09-25 12:40:59,026 [INFO] 中间结果已保存到: ./output/medical_rag_results_summary.xlsx
+2025-09-25 12:40:59,026 [INFO] 所有批次处理完毕，保存最终结果
+2025-09-25 12:40:59,049 [INFO] 最终结果已保存到: ./output/medical_rag_results_summary.xlsx
+2025-09-25 12:40:59,049 [INFO] ==================================================
+2025-09-25 12:40:59,049 [INFO]           批处理任务完成          
+2025-09-25 12:40:59,049 [INFO] ==================================================
+2025-09-25 12:40:59,049 [INFO] 总耗时: 15.5 秒
+2025-09-25 12:40:59,049 [INFO] 结果统计:
+2025-09-25 12:40:59,049 [INFO]   完全成功: 0 个查询
+2025-09-25 12:40:59,049 [INFO]   元评估后成功整合: 1 个查询
+2025-09-25 12:40:59,049 [INFO]   部分成功: 0 个查询
+2025-09-25 12:40:59,049 [INFO]   不一致但元评估失败: 0 个查询
+2025-09-25 12:40:59,049 [INFO]   完全失败: 0 个查询
+2025-09-25 12:40:59,049 [INFO]   主知识库被使用: 1 个
+2025-09-25 12:40:59,049 [INFO]   主知识库启用重排序: 1 个
+2025-09-25 12:40:59,049 [INFO]   症状知识库被使用: 1 个
+2025-09-25 12:40:59,049 [INFO]   症状知识库启用重排序: 1 个
+2025-09-25 12:40:59,049 [INFO]   总计记录的查询: 1 个
+2025-09-25 12:40:59,049 [INFO] ==================================================
+2025-09-25 13:11:10,588 [INFO] 使用设备: cuda
+2025-09-25 13:11:10,589 [INFO] 使用模型: deepseek-chat
+2025-09-25 13:11:10,589 [INFO] 开始初始化 MedicalProcessor 组件
+2025-09-25 13:11:10,589 [INFO] 初始化API客户端...
+2025-09-25 13:11:10,589 [INFO] 初始化API客户端: DeepSeek API
+2025-09-25 13:11:10,930 [INFO] API客户端初始化成功
+2025-09-25 13:11:10,930 [INFO] API客户端初始化成功
+2025-09-25 13:11:10,930 [INFO] 初始化重排序模型...
+2025-09-25 13:11:10,930 [INFO] 初始化重排序模型: Qwen/Qwen3-Reranker-0.6B
+2025-09-25 13:11:20,320 [INFO] 特殊token初始化成功: True=2514, False=4049
+2025-09-25 13:11:20,320 [INFO] 重排序模型初始化成功
+2025-09-25 13:11:20,321 [INFO] 重排序模型初始化成功
+2025-09-25 13:11:20,321 [INFO] 开始加载向量库...
+2025-09-25 13:11:20,321 [INFO] 开始加载向量库...
+2025-09-25 13:11:20,321 [INFO] 初始化嵌入模型...
+2025-09-25 13:11:20,321 [INFO] 设备: cuda
+2025-09-25 13:11:20,321 [INFO] 模型路径: /mnt/fang/qwen3_embedding_0.6B_finetuned_inbatch_pro_earlystop
+2025-09-25 13:11:20,988 [INFO] Load pretrained SentenceTransformer: /mnt/fang/qwen3_embedding_0.6B_finetuned_inbatch_pro_earlystop
+2025-09-25 13:11:20,988 [WARNING] No sentence-transformers model found with name /mnt/fang/qwen3_embedding_0.6B_finetuned_inbatch_pro_earlystop. Creating a new one with mean pooling.
+2025-09-25 13:11:23,448 [INFO] 嵌入模型加载成功，维度: 1024
+2025-09-25 13:11:23,523 [INFO] Loading faiss with AVX512 support.
+2025-09-25 13:11:23,544 [INFO] Successfully loaded faiss with AVX512 support.
+2025-09-25 13:11:23,549 [INFO] Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes. This is only an error if you're trying to use GPU Faiss.
+2025-09-25 13:11:23,631 [INFO] 主向量库加载完成: 5164文档
+2025-09-25 13:11:23,633 [INFO] 症状向量库加载完成: 426文档
+2025-09-25 13:11:23,633 [INFO] 向量库加载耗时: 3.31秒
+2025-09-25 13:11:23,633 [INFO] 向量库加载耗时: 3.31秒
+2025-09-25 13:11:23,633 [INFO] MedicalProcessor 初始化完成
+2025-09-25 13:11:23,634 [INFO] 加载输入数据
+2025-09-25 13:11:23,634 [INFO] 使用单个术语: '我感觉头晕晕的，很不舒服'
+2025-09-25 13:11:23,634 [INFO] 使用单个问题类型: '症状'
+2025-09-25 13:11:23,634 [INFO] 总查询数: 1 (1个术语 × 1个问题类型)
+2025-09-25 13:11:23,634 [INFO] 检查历史处理进度
+2025-09-25 13:11:23,634 [INFO] 已加载 0 个已完成查询的历史记录
+2025-09-25 13:11:23,634 [INFO] 将处理 1 个查询
+2025-09-25 13:11:23,634 [INFO] 加载历史结果以便合并
+2025-09-25 13:11:23,634 [INFO] ==================================================
+2025-09-25 13:11:23,634 [INFO] 开始批量处理查询
+2025-09-25 13:11:23,634 [INFO] 待处理: 1 / 总计: 1 个查询
+2025-09-25 13:11:23,634 [INFO] ==================================================
+2025-09-25 13:11:23,634 [INFO] --- 批次 1/1 开始处理 (1个查询) ---
+2025-09-25 13:11:23,634 [INFO] [1-1/1] 启动处理查询 ID 1: '我感觉头晕晕的，很不舒服的症状'
+2025-09-25 13:11:23,634 [INFO] --- 启动处理查询 ID 1: '我感觉头晕晕的，很不舒服的症状' (任务类型: symptom_extraction) ---
+2025-09-25 13:11:23,707 [ERROR] 处理 symptom_kb 时出现异常: rerank_documents() got an unexpected keyword argument 'top_n'
+2025-09-25 13:11:23,778 [ERROR] 处理 main_kb 时出现异常: rerank_documents() got an unexpected keyword argument 'top_n'
+2025-09-25 13:11:23,778 [INFO] --- 查询 ID 1 处理完毕。总状态: failed ---
+2025-09-25 13:11:23,778 [INFO]   ❌ ID 1 (0.14s) -> 总状态: failed (主知识库: (未启用), 症状知识库: (未启用))
+2025-09-25 13:11:23,779 [INFO] 保存批次进度和中间结果
+2025-09-25 13:11:23,883 [INFO] 中间结果已保存到: ./output/medical_rag_results_summary.xlsx
+2025-09-25 13:11:23,884 [INFO] 所有批次处理完毕，保存最终结果
+2025-09-25 13:11:23,904 [INFO] 最终结果已保存到: ./output/medical_rag_results_summary.xlsx
+2025-09-25 13:11:23,904 [INFO] ==================================================
+2025-09-25 13:11:23,904 [INFO]           批处理任务完成          
+2025-09-25 13:11:23,904 [INFO] ==================================================
+2025-09-25 13:11:23,904 [INFO] 总耗时: 0.3 秒
+2025-09-25 13:11:23,904 [INFO] 结果统计:
+2025-09-25 13:11:23,904 [INFO]   完全成功: 0 个查询
+2025-09-25 13:11:23,905 [INFO]   元评估后成功整合: 0 个查询
+2025-09-25 13:11:23,905 [INFO]   部分成功: 0 个查询
+2025-09-25 13:11:23,905 [INFO]   不一致但元评估失败: 0 个查询
+2025-09-25 13:11:23,905 [INFO]   完全失败: 1 个查询
+2025-09-25 13:11:23,905 [INFO]   主知识库被使用: 0 个
+2025-09-25 13:11:23,905 [INFO]   主知识库启用重排序: 0 个
+2025-09-25 13:11:23,905 [INFO]   症状知识库被使用: 0 个
+2025-09-25 13:11:23,905 [INFO]   症状知识库启用重排序: 0 个
+2025-09-25 13:11:23,905 [INFO]   总计记录的查询: 1 个
+2025-09-25 13:11:23,905 [INFO] ==================================================
+2025-09-25 13:13:33,585 [INFO] 使用设备: cuda
+2025-09-25 13:13:33,585 [INFO] 使用模型: deepseek-chat
+2025-09-25 13:13:33,585 [INFO] 开始初始化 MedicalProcessor 组件
+2025-09-25 13:13:33,585 [INFO] 初始化API客户端...
+2025-09-25 13:13:33,585 [INFO] 初始化API客户端: DeepSeek API
+2025-09-25 13:13:33,823 [INFO] API客户端初始化成功
+2025-09-25 13:13:33,823 [INFO] API客户端初始化成功
+2025-09-25 13:13:33,823 [INFO] 初始化重排序模型...
+2025-09-25 13:13:33,823 [INFO] 初始化重排序模型: Qwen/Qwen3-Reranker-0.6B
+2025-09-25 13:13:36,991 [INFO] 特殊token初始化成功: True=2514, False=4049
+2025-09-25 13:13:36,991 [INFO] 重排序模型初始化成功
+2025-09-25 13:13:36,991 [INFO] 重排序模型初始化成功
+2025-09-25 13:13:36,991 [INFO] 开始加载向量库...
+2025-09-25 13:13:36,991 [INFO] 开始加载向量库...
+2025-09-25 13:13:36,991 [INFO] 初始化嵌入模型...
+2025-09-25 13:13:36,991 [INFO] 设备: cuda
+2025-09-25 13:13:36,991 [INFO] 模型路径: /mnt/fang/qwen3_embedding_0.6B_finetuned_inbatch_pro_earlystop
+2025-09-25 13:13:37,576 [INFO] Load pretrained SentenceTransformer: /mnt/fang/qwen3_embedding_0.6B_finetuned_inbatch_pro_earlystop
+2025-09-25 13:13:37,576 [WARNING] No sentence-transformers model found with name /mnt/fang/qwen3_embedding_0.6B_finetuned_inbatch_pro_earlystop. Creating a new one with mean pooling.
+2025-09-25 13:13:39,652 [INFO] 嵌入模型加载成功，维度: 1024
+2025-09-25 13:13:39,707 [INFO] Loading faiss with AVX512 support.
+2025-09-25 13:13:39,723 [INFO] Successfully loaded faiss with AVX512 support.
+2025-09-25 13:13:39,726 [INFO] Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes. This is only an error if you're trying to use GPU Faiss.
+2025-09-25 13:13:39,798 [INFO] 主向量库加载完成: 5164文档
+2025-09-25 13:13:39,800 [INFO] 症状向量库加载完成: 426文档
+2025-09-25 13:13:39,800 [INFO] 向量库加载耗时: 2.81秒
+2025-09-25 13:13:39,800 [INFO] 向量库加载耗时: 2.81秒
+2025-09-25 13:13:39,800 [INFO] MedicalProcessor 初始化完成
+2025-09-25 13:13:39,800 [INFO] 加载输入数据
+2025-09-25 13:13:39,800 [INFO] 使用单个术语: '我感觉头晕晕的，很不舒服'
+2025-09-25 13:13:39,800 [INFO] 使用单个问题类型: '症状'
+2025-09-25 13:13:39,800 [INFO] 总查询数: 1 (1个术语 × 1个问题类型)
+2025-09-25 13:13:39,800 [INFO] 检查历史处理进度
+2025-09-25 13:13:39,800 [INFO] 发现历史进度文件，0个查询已完成
+2025-09-25 13:13:39,801 [INFO] 已加载 0 个已完成查询的历史记录
+2025-09-25 13:13:39,801 [INFO] 将处理 1 个查询
+2025-09-25 13:13:39,801 [INFO] 加载历史结果以便合并
+2025-09-25 13:13:39,872 [INFO] 已加载 0 条历史结果
+2025-09-25 13:13:39,872 [INFO] ==================================================
+2025-09-25 13:13:39,872 [INFO] 开始批量处理查询
+2025-09-25 13:13:39,872 [INFO] 待处理: 1 / 总计: 1 个查询
+2025-09-25 13:13:39,872 [INFO] ==================================================
+2025-09-25 13:13:39,872 [INFO] --- 批次 2/1 开始处理 (1个查询) ---
+2025-09-25 13:13:39,872 [INFO] [2-1/1] 启动处理查询 ID 1: '我感觉头晕晕的，很不舒服的症状'
+2025-09-25 13:13:39,872 [INFO] --- 启动处理查询 ID 1: '我感觉头晕晕的，很不舒服的症状' (任务类型: symptom_extraction) ---
+2025-09-25 13:13:39,929 [ERROR] 处理 symptom_kb 时出现异常: name 'k' is not defined
+2025-09-25 13:13:39,982 [ERROR] 处理 main_kb 时出现异常: name 'k' is not defined
+2025-09-25 13:13:39,982 [INFO] --- 查询 ID 1 处理完毕。总状态: failed ---
+2025-09-25 13:13:39,982 [INFO]   ❌ ID 1 (0.11s) -> 总状态: failed (主知识库: (未启用), 症状知识库: (未启用))
+2025-09-25 13:13:39,982 [INFO] 保存批次进度和中间结果
+2025-09-25 13:13:39,996 [INFO] 中间结果已保存到: ./output/medical_rag_results_summary.xlsx
+2025-09-25 13:13:39,997 [INFO] 所有批次处理完毕，保存最终结果
+2025-09-25 13:13:40,007 [INFO] 最终结果已保存到: ./output/medical_rag_results_summary.xlsx
+2025-09-25 13:13:40,007 [INFO] ==================================================
+2025-09-25 13:13:40,007 [INFO]           批处理任务完成          
+2025-09-25 13:13:40,008 [INFO] ==================================================
+2025-09-25 13:13:40,008 [INFO] 总耗时: 0.1 秒
+2025-09-25 13:13:40,008 [INFO] 结果统计:
+2025-09-25 13:13:40,008 [INFO]   完全成功: 0 个查询
+2025-09-25 13:13:40,008 [INFO]   元评估后成功整合: 0 个查询
+2025-09-25 13:13:40,008 [INFO]   部分成功: 0 个查询
+2025-09-25 13:13:40,008 [INFO]   不一致但元评估失败: 0 个查询
+2025-09-25 13:13:40,008 [INFO]   完全失败: 1 个查询
+2025-09-25 13:13:40,008 [INFO]   主知识库被使用: 0 个
+2025-09-25 13:13:40,008 [INFO]   主知识库启用重排序: 0 个
+2025-09-25 13:13:40,008 [INFO]   症状知识库被使用: 0 个
+2025-09-25 13:13:40,008 [INFO]   症状知识库启用重排序: 0 个
+2025-09-25 13:13:40,008 [INFO]   总计记录的查询: 1 个
+2025-09-25 13:13:40,008 [INFO] ==================================================
+2025-09-25 13:14:38,689 [INFO] 使用设备: cuda
+2025-09-25 13:14:38,689 [INFO] 使用模型: deepseek-chat
+2025-09-25 13:14:38,689 [INFO] 开始初始化 MedicalProcessor 组件
+2025-09-25 13:14:38,689 [INFO] 初始化API客户端...
+2025-09-25 13:14:38,689 [INFO] 初始化API客户端: DeepSeek API
+2025-09-25 13:14:38,917 [INFO] API客户端初始化成功
+2025-09-25 13:14:38,917 [INFO] API客户端初始化成功
+2025-09-25 13:14:38,917 [INFO] 初始化重排序模型...
+2025-09-25 13:14:38,917 [INFO] 初始化重排序模型: Qwen/Qwen3-Reranker-0.6B
+2025-09-25 13:14:41,853 [INFO] 特殊token初始化成功: True=2514, False=4049
+2025-09-25 13:14:41,854 [INFO] 重排序模型初始化成功
+2025-09-25 13:14:41,854 [INFO] 重排序模型初始化成功
+2025-09-25 13:14:41,854 [INFO] 开始加载向量库...
+2025-09-25 13:14:41,854 [INFO] 开始加载向量库...
+2025-09-25 13:14:41,854 [INFO] 初始化嵌入模型...
+2025-09-25 13:14:41,854 [INFO] 设备: cuda
+2025-09-25 13:14:41,854 [INFO] 模型路径: /mnt/fang/qwen3_embedding_0.6B_finetuned_inbatch_pro_earlystop
+2025-09-25 13:14:42,467 [INFO] Load pretrained SentenceTransformer: /mnt/fang/qwen3_embedding_0.6B_finetuned_inbatch_pro_earlystop
+2025-09-25 13:14:42,468 [WARNING] No sentence-transformers model found with name /mnt/fang/qwen3_embedding_0.6B_finetuned_inbatch_pro_earlystop. Creating a new one with mean pooling.
+2025-09-25 13:14:44,467 [INFO] 嵌入模型加载成功，维度: 1024
+2025-09-25 13:14:44,521 [INFO] Loading faiss with AVX512 support.
+2025-09-25 13:14:44,537 [INFO] Successfully loaded faiss with AVX512 support.
+2025-09-25 13:14:44,540 [INFO] Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes. This is only an error if you're trying to use GPU Faiss.
+2025-09-25 13:14:44,602 [INFO] 主向量库加载完成: 5164文档
+2025-09-25 13:14:44,604 [INFO] 症状向量库加载完成: 426文档
+2025-09-25 13:14:44,604 [INFO] 向量库加载耗时: 2.75秒
+2025-09-25 13:14:44,604 [INFO] 向量库加载耗时: 2.75秒
+2025-09-25 13:14:44,604 [INFO] MedicalProcessor 初始化完成
+2025-09-25 13:14:44,604 [INFO] 加载输入数据
+2025-09-25 13:14:44,604 [INFO] 使用单个术语: '我感觉头晕晕的，很不舒服'
+2025-09-25 13:14:44,604 [INFO] 使用单个问题类型: '症状'
+2025-09-25 13:14:44,604 [INFO] 总查询数: 1 (1个术语 × 1个问题类型)
+2025-09-25 13:14:44,604 [INFO] 检查历史处理进度
+2025-09-25 13:14:44,605 [INFO] 发现历史进度文件，0个查询已完成
+2025-09-25 13:14:44,605 [INFO] 已加载 0 个已完成查询的历史记录
+2025-09-25 13:14:44,605 [INFO] 将处理 1 个查询
+2025-09-25 13:14:44,605 [INFO] 加载历史结果以便合并
+2025-09-25 13:14:44,673 [INFO] 已加载 0 条历史结果
+2025-09-25 13:14:44,673 [INFO] ==================================================
+2025-09-25 13:14:44,673 [INFO] 开始批量处理查询
+2025-09-25 13:14:44,673 [INFO] 待处理: 1 / 总计: 1 个查询
+2025-09-25 13:14:44,673 [INFO] ==================================================
+2025-09-25 13:14:44,674 [INFO] --- 批次 3/1 开始处理 (1个查询) ---
+2025-09-25 13:14:44,674 [INFO] [3-1/1] 启动处理查询 ID 1: '我感觉头晕晕的，很不舒服的症状'
+2025-09-25 13:14:44,674 [INFO] --- 启动处理查询 ID 1: '我感觉头晕晕的，很不舒服的症状' (任务类型: symptom_extraction) ---
+2025-09-25 13:14:45,153 [INFO] HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2025-09-25 13:14:48,440 [INFO] HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2025-09-25 13:14:51,322 [INFO] --- 查询 ID 1 处理完毕。总状态: completed ---
+2025-09-25 13:14:51,322 [INFO]   ✅ ID 1 (6.65s) -> 总状态: completed (主知识库: ✅, 症状知识库: ✅)
+2025-09-25 13:14:51,323 [INFO] 保存批次进度和中间结果
+2025-09-25 13:14:51,356 [INFO] 中间结果已保存到: ./output/medical_rag_results_summary.xlsx
+2025-09-25 13:14:51,356 [INFO] 所有批次处理完毕，保存最终结果
+2025-09-25 13:14:51,377 [INFO] 最终结果已保存到: ./output/medical_rag_results_summary.xlsx
+2025-09-25 13:14:51,377 [INFO] ==================================================
+2025-09-25 13:14:51,377 [INFO]           批处理任务完成          
+2025-09-25 13:14:51,377 [INFO] ==================================================
+2025-09-25 13:14:51,377 [INFO] 总耗时: 6.7 秒
+2025-09-25 13:14:51,377 [INFO] 结果统计:
+2025-09-25 13:14:51,377 [INFO]   完全成功: 1 个查询
+2025-09-25 13:14:51,377 [INFO]   元评估后成功整合: 0 个查询
+2025-09-25 13:14:51,377 [INFO]   部分成功: 0 个查询
+2025-09-25 13:14:51,377 [INFO]   不一致但元评估失败: 0 个查询
+2025-09-25 13:14:51,377 [INFO]   完全失败: 0 个查询
+2025-09-25 13:14:51,377 [INFO]   主知识库被使用: 1 个
+2025-09-25 13:14:51,377 [INFO]   主知识库启用重排序: 1 个
+2025-09-25 13:14:51,377 [INFO]   症状知识库被使用: 1 个
+2025-09-25 13:14:51,377 [INFO]   症状知识库启用重排序: 1 个
+2025-09-25 13:14:51,377 [INFO]   总计记录的查询: 1 个
+2025-09-25 13:14:51,377 [INFO] ==================================================
+2025-09-25 13:50:07,001 [INFO] 使用设备: cuda
+2025-09-25 13:50:07,001 [INFO] 使用模型: deepseek-chat
+2025-09-25 13:50:07,001 [INFO] 开始初始化 MedicalProcessor 组件
+2025-09-25 13:50:07,001 [INFO] 初始化API客户端...
+2025-09-25 13:50:07,001 [INFO] 初始化API客户端: DeepSeek API
+2025-09-25 13:50:07,337 [INFO] API客户端初始化成功
+2025-09-25 13:50:07,337 [INFO] API客户端初始化成功
+2025-09-25 13:50:07,337 [INFO] 初始化重排序模型...
+2025-09-25 13:50:07,337 [INFO] 初始化重排序模型: Qwen/Qwen3-Reranker-0.6B
+2025-09-25 13:50:12,824 [INFO] 特殊token初始化成功: True=2514, False=4049
+2025-09-25 13:50:12,824 [INFO] 重排序模型初始化成功
+2025-09-25 13:50:12,824 [INFO] 重排序模型初始化成功
+2025-09-25 13:50:12,824 [INFO] 开始加载向量库...
+2025-09-25 13:50:12,824 [INFO] 开始加载向量库...
+2025-09-25 13:50:12,825 [INFO] 初始化嵌入模型...
+2025-09-25 13:50:12,825 [INFO] 设备: cuda
+2025-09-25 13:50:12,825 [INFO] 模型路径: /mnt/fang/qwen3_embedding_0.6B_finetuned_inbatch_pro_earlystop
+2025-09-25 13:50:13,520 [INFO] Load pretrained SentenceTransformer: /mnt/fang/qwen3_embedding_0.6B_finetuned_inbatch_pro_earlystop
+2025-09-25 13:50:13,520 [WARNING] No sentence-transformers model found with name /mnt/fang/qwen3_embedding_0.6B_finetuned_inbatch_pro_earlystop. Creating a new one with mean pooling.
+2025-09-25 13:50:16,130 [INFO] 嵌入模型加载成功，维度: 1024
+2025-09-25 13:50:16,205 [INFO] Loading faiss with AVX512 support.
+2025-09-25 13:50:16,221 [INFO] Successfully loaded faiss with AVX512 support.
+2025-09-25 13:50:16,224 [INFO] Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes. This is only an error if you're trying to use GPU Faiss.
+2025-09-25 13:50:16,224 [WARNING] 加载向量库分片失败: Error in faiss::FileIOReader::FileIOReader(const char*) at /project/faiss/faiss/impl/io.cpp:67: Error: 'f' failed: could not open /home/fangyi1/Deepseek项目/RAG项目/medical_retrieval/MedSE2RAG/data/vector_database/all_pdfs_vector_db_qwen3/index.faiss for reading: No such file or directory
+2025-09-25 13:50:16,227 [INFO] 症状向量库加载完成: 426文档
+2025-09-25 13:50:16,227 [INFO] 向量库加载耗时: 3.40秒
+2025-09-25 13:50:16,227 [INFO] 向量库加载耗时: 3.40秒
+2025-09-25 13:50:16,227 [INFO] MedicalProcessor 初始化完成
+2025-09-25 13:50:16,227 [INFO] 加载输入数据
+2025-09-25 13:50:16,227 [INFO] 使用单个术语: '我感觉头晕晕的，很不舒服'
+2025-09-25 13:50:16,227 [INFO] 使用单个问题类型: '症状'
+2025-09-25 13:50:16,227 [INFO] 总查询数: 1 (1个术语 × 1个问题类型)
+2025-09-25 13:50:16,227 [INFO] 检查历史处理进度
+2025-09-25 13:50:16,227 [INFO] 已加载 0 个已完成查询的历史记录
+2025-09-25 13:50:16,227 [INFO] 将处理 1 个查询
+2025-09-25 13:50:16,227 [INFO] 加载历史结果以便合并
+2025-09-25 13:50:16,227 [INFO] ==================================================
+2025-09-25 13:50:16,227 [INFO] 开始批量处理查询
+2025-09-25 13:50:16,227 [INFO] 待处理: 1 / 总计: 1 个查询
+2025-09-25 13:50:16,227 [INFO] ==================================================
+2025-09-25 13:50:16,227 [INFO] --- 批次 1/1 开始处理 (1个查询) ---
+2025-09-25 13:50:16,227 [INFO] [1-1/1] 启动处理查询 ID 1: '我感觉头晕晕的，很不舒服的症状'
+2025-09-25 13:50:16,227 [INFO] --- 启动处理查询 ID 1: '我感觉头晕晕的，很不舒服的症状' (任务类型: symptom_extraction) ---
+2025-09-25 13:50:16,761 [INFO] HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2025-09-25 13:50:19,622 [INFO] --- 查询 ID 1 处理完毕。总状态: partially_completed ---
+2025-09-25 13:50:19,622 [INFO]   ⚠️ ID 1 (3.39s) -> 总状态: partially_completed (主知识库: (未启用), 症状知识库: ✅)
+2025-09-25 13:50:19,622 [INFO] 保存批次进度和中间结果
+2025-09-25 13:50:19,732 [INFO] 中间结果已保存到: ./output/medical_rag_results_summary.xlsx
+2025-09-25 13:50:19,732 [INFO] 所有批次处理完毕，保存最终结果
+2025-09-25 13:50:19,752 [INFO] 最终结果已保存到: ./output/medical_rag_results_summary.xlsx
+2025-09-25 13:50:19,753 [INFO] ==================================================
+2025-09-25 13:50:19,753 [INFO]           批处理任务完成          
+2025-09-25 13:50:19,753 [INFO] ==================================================
+2025-09-25 13:50:19,753 [INFO] 总耗时: 3.5 秒
+2025-09-25 13:50:19,753 [INFO] 结果统计:
+2025-09-25 13:50:19,753 [INFO]   完全成功: 0 个查询
+2025-09-25 13:50:19,753 [INFO]   元评估后成功整合: 0 个查询
+2025-09-25 13:50:19,753 [INFO]   部分成功: 1 个查询
+2025-09-25 13:50:19,753 [INFO]   不一致但元评估失败: 0 个查询
+2025-09-25 13:50:19,753 [INFO]   完全失败: 0 个查询
+2025-09-25 13:50:19,753 [INFO]   主知识库被使用: 0 个
+2025-09-25 13:50:19,753 [INFO]   主知识库启用重排序: 0 个
+2025-09-25 13:50:19,753 [INFO]   症状知识库被使用: 1 个
+2025-09-25 13:50:19,753 [INFO]   症状知识库启用重排序: 1 个
+2025-09-25 13:50:19,753 [INFO]   总计记录的查询: 1 个
+2025-09-25 13:50:19,753 [INFO] ==================================================
+2025-09-25 13:51:19,220 [INFO] 使用设备: cuda
+2025-09-25 13:51:19,220 [INFO] 使用模型: deepseek-chat
+2025-09-25 13:51:19,220 [INFO] 开始初始化 MedicalProcessor 组件
+2025-09-25 13:51:19,220 [INFO] 初始化API客户端...
+2025-09-25 13:51:19,220 [INFO] 初始化API客户端: DeepSeek API
+2025-09-25 13:51:19,536 [INFO] API客户端初始化成功
+2025-09-25 13:51:19,536 [INFO] API客户端初始化成功
+2025-09-25 13:51:19,536 [INFO] 初始化重排序模型...
+2025-09-25 13:51:19,536 [INFO] 初始化重排序模型: Qwen/Qwen3-Reranker-0.6B
+2025-09-25 13:51:22,681 [INFO] 特殊token初始化成功: True=2514, False=4049
+2025-09-25 13:51:22,682 [INFO] 重排序模型初始化成功
+2025-09-25 13:51:22,682 [INFO] 重排序模型初始化成功
+2025-09-25 13:51:22,682 [INFO] 开始加载向量库...
+2025-09-25 13:51:22,682 [INFO] 开始加载向量库...
+2025-09-25 13:51:22,682 [INFO] 初始化嵌入模型...
+2025-09-25 13:51:22,682 [INFO] 设备: cuda
+2025-09-25 13:51:22,682 [INFO] 模型路径: /mnt/fang/qwen3_embedding_0.6B_finetuned_inbatch_pro_earlystop
+2025-09-25 13:51:23,319 [INFO] Load pretrained SentenceTransformer: /mnt/fang/qwen3_embedding_0.6B_finetuned_inbatch_pro_earlystop
+2025-09-25 13:51:23,319 [WARNING] No sentence-transformers model found with name /mnt/fang/qwen3_embedding_0.6B_finetuned_inbatch_pro_earlystop. Creating a new one with mean pooling.
+2025-09-25 13:51:25,833 [INFO] 嵌入模型加载成功，维度: 1024
+2025-09-25 13:51:25,906 [INFO] Loading faiss with AVX512 support.
+2025-09-25 13:51:25,922 [INFO] Successfully loaded faiss with AVX512 support.
+2025-09-25 13:51:25,925 [INFO] Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes. This is only an error if you're trying to use GPU Faiss.
+2025-09-25 13:51:25,989 [INFO] 主向量库加载完成: 5164文档
+2025-09-25 13:51:25,991 [INFO] 症状向量库加载完成: 426文档
+2025-09-25 13:51:25,991 [INFO] 向量库加载耗时: 3.31秒
+2025-09-25 13:51:25,991 [INFO] 向量库加载耗时: 3.31秒
+2025-09-25 13:51:25,991 [INFO] MedicalProcessor 初始化完成
+2025-09-25 13:51:25,991 [INFO] 加载输入数据
+2025-09-25 13:51:25,991 [INFO] 使用单个术语: '我感觉头晕晕的，很不舒服'
+2025-09-25 13:51:25,991 [INFO] 使用单个问题类型: '症状'
+2025-09-25 13:51:25,991 [INFO] 总查询数: 1 (1个术语 × 1个问题类型)
+2025-09-25 13:51:25,991 [INFO] 检查历史处理进度
+2025-09-25 13:51:25,991 [INFO] 发现历史进度文件，1个查询已完成
+2025-09-25 13:51:25,991 [INFO] 已加载 1 个已完成查询的历史记录
+2025-09-25 13:51:25,992 [INFO] 将处理 0 个查询
+2025-09-25 13:51:25,992 [INFO] 所有查询已完成，或没有待处理的查询
